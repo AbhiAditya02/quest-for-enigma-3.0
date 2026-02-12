@@ -15,7 +15,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen -mt-32 relative selection:bg-cyan-500/30 overflow-x-hidden">
+    <div className="min-h-screen relative selection:bg-cyan-500/30 overflow-x-hidden">
       {/* Structural Background */}
       <div className="fixed inset-0 -z-10 bg-slate-950">
         <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none"></div>
@@ -24,9 +24,15 @@ const App: React.FC = () => {
         <div className="absolute bottom-[10%] right-[5%] w-96 h-96 bg-blue-900/10 rounded-full blur-[120px]"></div>
       </div>
 
+      {/* Navigation */}
+      <nav className="ml-8 mt-6">
+        <div className="w-28 h-28 rounded-full bg-white flex items-center justify-center overflow-hidden border-2 border-cyan-500/30 ">
+               <img src={LOGO_URL} alt="ISTE HIT-SC Logo" className="w-full h-full object-cover"/>
+            </div>
+      </nav>
 
       {/* Hero Section */}
-      <section className="relative pt-48 pb-24 md:pt-64 md:pb-40 px-6">
+      <section className="relative pb-24 md:pb-40 px-6">
         <div className="container mx-auto text-center">
           <div className="inline-flex items-center gap-3 px-6 py-2 bg-white/5 border border-white/10 rounded-sm mb-8 animate-pulse">
             <span className="w-2 h-2 rounded-full bg-cyan-400"></span>
