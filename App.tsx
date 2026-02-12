@@ -25,14 +25,14 @@ const App: React.FC = () => {
       </div>
 
       {/* Navigation */}
-      <nav className="ml-8 mt-6">
-        <div className="w-28 h-28 rounded-full bg-white flex items-center justify-center overflow-hidden border-2 border-cyan-500/30 ">
+      <nav className="hidden md:flex ml-8 mt-6">
+        <div className="w-28  h-28 rounded-full bg-white flex items-center justify-center overflow-hidden border-2 border-cyan-500/30 ">
                <img src={LOGO_URL} alt="ISTE HIT-SC Logo" className="w-full h-full object-cover"/>
             </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="relative pb-24 md:pb-40 px-6">
+      <section className="relative pt-12 md:pt-0 pb-24 md:pb-40 px-6">
         <div className="container mx-auto text-center">
           <div className="inline-flex items-center gap-3 px-6 py-2 bg-white/5 border border-white/10 rounded-sm mb-8 animate-pulse">
             <span className="w-2 h-2 rounded-full bg-cyan-400"></span>
