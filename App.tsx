@@ -15,7 +15,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen relative selection:bg-cyan-500/30 overflow-x-hidden">
+    <div className="min-h-screen -mt-32 relative selection:bg-cyan-500/30 overflow-x-hidden">
       {/* Structural Background */}
       <div className="fixed inset-0 -z-10 bg-slate-950">
         <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none"></div>
@@ -24,35 +24,6 @@ const App: React.FC = () => {
         <div className="absolute bottom-[10%] right-[5%] w-96 h-96 bg-blue-900/10 rounded-full blur-[120px]"></div>
       </div>
 
-      {/* Navigation */}
-      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'py-4 glass border-b border-white/10' : 'py-6 md:py-8'}`}>
-        <div className="container mx-auto px-6 flex justify-between items-center">
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center overflow-hidden border-2 border-cyan-500/30">
-               <img src={LOGO_URL} alt="ISTE HIT-SC Logo" className="w-full h-full object-cover"/>
-            </div>
-            <div>
-              <p className="font-bold text-xs md:text-sm tracking-[0.2em] text-cyan-400 uppercase leading-none">ISTE HIT-SC</p>
-              <p className="font-tech text-xs hidden md:block mt-1">Students' Chapter</p>
-            </div>
-          </div>
-          <div className="flex items-center gap-4 md:gap-10">
-            <nav className="hidden lg:flex items-center gap-8">
-              <a href="#about" className="text-[11px] font-bold uppercase tracking-widest hover:text-cyan-400 transition-colors">Strategy</a>
-              <a href="#rounds" className="text-[11px] font-bold uppercase tracking-widest hover:text-cyan-400 transition-colors">Timeline</a>
-              <a href="#contact" className="text-[11px] font-bold uppercase tracking-widest hover:text-cyan-400 transition-colors">Contact</a>
-            </nav>
-            <a 
-              href={REGISTRATION_LINK} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-white text-slate-950 font-black rounded-sm text-xs uppercase tracking-widest hover:bg-cyan-400 transition-all hover:scale-105 active:scale-95 shadow-lg shadow-cyan-500/10"
-            >
-              Register Free
-            </a>
-          </div>
-        </div>
-      </nav>
 
       {/* Hero Section */}
       <section className="relative pt-48 pb-24 md:pt-64 md:pb-40 px-6">
